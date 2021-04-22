@@ -1,0 +1,71 @@
+@import 'docs/modified/assets/sass/libs/vars';
+@import 'docs/modified/assets/sass/libs/functions';
+@import 'docs/modified/assets/sass/libs/mixins';
+@import 'docs/modified/assets/sass/libs/vendor';
+@import 'docs/modified/assets/sass/libs/breakpoints';
+@import 'docs/modified/assets/sass/libs/html-grid';
+@import 'docs/modified/assets/sass/libs/fixed-grid';
+@import 'fontawesome-all.min.css';
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900');
+
+/*
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+// Breakpoints.
+
+	@include breakpoints((
+		default:   (1681px,   null     ),
+		xlarge:    (1281px,   1680px   ),
+		large:     (981px,    1280px   ),
+		medium:    (737px,    980px    ),
+		small:     (481px,    736px    ),
+		xsmall:    (361px,    480px    ),
+		xxsmall:   (null,     360px    )
+	));
+
+// Mixins.
+
+	@mixin color($p) {
+		@include color-typography($p);
+		@include color-box($p);
+		@include color-button($p);
+		@include color-form($p);
+		@include color-list($p);
+		@include color-section($p);
+		@include color-table($p);
+		@include color-pagination($p);
+	}
+
+// Base.
+
+	@import 'docs/modified/assets/sass/base/reset';
+	@import 'docs/modified/assets/sass/base/page';
+	@import 'docs/modified/assets/sass/base/typography';
+
+// Component.
+
+	@import 'docs/modified/assets/sass/components/row';
+	@import 'docs/modified/assets/sass/components/box';
+	@import 'docs/modified/assets/sass/components/button';
+	@import 'docs/modified/assets/sass/components/form';
+	@import 'docs/modified/assets/sass/components/icon';
+	@import 'docs/modified/assets/sass/components/image';
+	@import 'docs/modified/assets/sass/components/actions';
+	@import 'docs/modified/assets/sass/components/icons';
+	@import 'docs/modified/assets/sass/components/list';
+	@import 'docs/modified/assets/sass/components/section';
+	@import 'docs/modified/assets/sass/components/table';
+	@import 'docs/modified/assets/sass/components/pagination';
+
+// Layout.
+
+	@import 'docs/modified/assets/sass/layout/wrapper';
+	@import 'docs/modified/assets/sass/layout/intro';
+	@import 'docs/modified/assets/sass/layout/header';
+	@import 'docs/modified/assets/sass/layout/nav';
+	@import 'docs/modified/assets/sass/layout/main';
+	@import 'docs/modified/assets/sass/layout/footer';
+	@import 'docs/modified/assets/sass/layout/navPanel';

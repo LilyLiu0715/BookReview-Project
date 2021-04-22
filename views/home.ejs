@@ -1,0 +1,160 @@
+<%- include ('partial/header') -%>
+
+<head>
+    <!-- <link rel = "stylesheet" href = "../styles/home.css"> -->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Redressed">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<!--     <link rel = "stylesheet" href = "css/style.css">-->
+
+
+
+
+<style>
+    .jumbotron{
+    background-image: url("https://www.editorialdepartment.com/wp-content/uploads/2018/05/open-book-min.jpg");
+    background-size:cover;
+
+    font-family: 'Redressed', serif;
+    height: 100%;
+    width: 100%;
+}
+
+.the-community{
+    font-family: 'Redressed', serif;
+}
+
+.award-body{
+    background-color:#eab676;
+    padding-right:30px;
+    height: 300px;
+    font-family: 'Redressed', serif;
+}
+
+.register-section{
+    font-family: 'Redressed', serif;
+}
+
+.row{
+    column-gap: 40px;}
+
+.book-review-section{
+    padding-top: 10px;
+}
+
+
+</style>
+
+</head>
+
+<div class="container">
+    <header class = "jumbotron">
+        <h1 style = "color:white">
+            Best Book of the year
+        </h1>
+        <p1 style = "color:white">See the winners chosen by community of readers</p1>
+        <br>
+        <button type = "button" class = "btn-btn-white">Click</button>
+    </header>
+
+    <div class = "container">
+            <div class ="row">
+                <div class = "col-lg">
+                    <div class ="award-body">
+                        <h3> Book review choice Award</h3>
+                        <p>See the winners in the only major book awards decided by readers</p>
+                        <button type="button" class="btn btn-warning"><a href="/categories">See the Winners</a></button>
+                    
+                        <div class = "row book-review-section">
+                            <div class = "col-lg" >
+                                <h6><a href="#" style = "color:#00635d" > Fiction</a></h6>
+                                <h6><a href="#" style = "color:#00635d"> Romance</a></h6>
+                                <h6><a href="#" style = "color:#00635d"> Science Fiction</a></h6>
+                                <h6><a href="#" style = "color:#00635d"> Mystery & Thriller</a></h6>
+                            </div>
+                            <div class = "col-lg">
+                                <h6><a href="#" style = "color:#00635d"> Nonfiction</a></h6>
+                                <h6><a href="#" style = "color:#00635d"> Humor</a></h6>
+                                <h6><a href="#" style = "color:#00635d"> Fantasy</a></h6>
+                                <h6><a href="#" style = "color:#00635d"> Young Adult Fiction</a></h6>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class = "col-sm-3 ml-auto register-section">
+                        <h5>Want to share your favorite book? Register now!</h5>
+                        <label for = "name" class="form-label">Name</label>
+                        <input type = "text" class = "form-control" id="name" placeholder="Name">
+
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <br>
+                        <button type = "button" class = "btn btn-warning">Sign up</button>
+               </div>
+            </div>
+    </div>
+    <div class = "container the-community">
+        <div class = "row">
+            <i class="fa fa-star fa-lg"></i><h2>New book added by the community</h2>  <i class="fa fa-star fa-lg"></i>
+        </div>
+        <div class = "row">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRR5cbrDlCc10T5D3KL-v5Spp26xrQ0ENIkRLEUFVgBD63HqVFknnSpsg5y1tnfzFeBtj1hcvm_76OmXUaQ8Zizuzbu-Ht7jxVsJBEadhRhUrvO-G4l74riqZzJH4I&usqp=CAE" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">In Five Years</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="/bookDetail" class="btn btn-primary">View</a>
+                </div>
+              </div>
+              <div class="card " style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRRiPVILh5cxkRliV9q1_Z9348XjFKH5n1fFtWDv7ShhGp_h5PNWoF-SidzRN7qf-1bl1qSRlBkz0qD53VKkVivxjThNXttkz614-j4sjC9uxtzsg&usqp=CAE" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Good Vides, Good life</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="/bookDetail" class="btn btn-primary">View</a>
+                </div>
+              </div>
+              <div class="card " style="width: 18rem;">
+                <img src="https://static01.nyt.com/images/2020/05/27/books/best-books-bennett/26BOOKBENNETT1-superJumbo.jpg?quality=90&auto=webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">The Vanishing Half</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="/bookDetail" class="btn btn-primary">View</a>
+                </div>
+              </div>
+        </div>
+        <div class = "row">
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQCZmVCEhvGp4LZuNiZawQ-1dWTzVo1Gz41H-YXihGvNd7z_DjLc26ooa6gMMK24X5O-9hMu0mP5AVdLOwoRTJOMUlQEAUGeP7q_EKuFaQGvcSmwLfovY6n3nRAHts&usqp=CAE" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Anxious People</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="/bookDetail" class="btn btn-primary">View</a>
+                </div>
+              </div>
+              <div class="card " style="width: 18rem;">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQSOVvU_phdV6rtW2FgTRFkaQCfGJWmY5lhwaltWFE3ptc4WvDrZ20LO-OqtXWrGiQVRcWtnOhc16iXHeisu8n3PZNEU4cCONzqSdBYFS_A4t9ge_I&usqp=CAE" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Little Fires Everywhere</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="/bookDetail" class="btn btn-primary">View</a>
+                </div>
+              </div> 
+              <div class="card " style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/I/51I5n5j0xiL._SY346_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pretty Things</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="/bookDetail" class="btn btn-primary">View</a>
+                </div>
+              </div>       
+        </div>
+    </div>
+</div>
+
+
+<%- include ('partial/footer') -%>

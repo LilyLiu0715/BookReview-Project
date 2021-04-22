@@ -1,0 +1,178 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/categories/background1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    width: 150px;
+    Margin-top: 18px;
+}
+
+.header {
+    height: 10%;
+}
+
+.header-btn {
+    text-decoration: none !important;
+    border-radius: 30px;
+    padding: 7px 20px;
+    float: right;
+    Margin-top: 15px;
+    color: #fff !important;
+    background: #107afd;
+    font-weight: 600;
+}
+
+.books h1 {
+    color: #fff;
+}
+
+.books img {
+    height: 250px;
+    margin: 10px auto 10px auto;
+
+}
+
+.books {
+
+    padding-top: 40px;
+}
+
+.ratingStars {
+    text-align: center;
+    background: transparent;
+    border: 0;
+    box-sizing: content-box;
+    display: block;
+    front-size: 11px;
+    height: 16px;
+    line-height: 14px;
+    margin: auto;
+    padding: 3px 6px 0 6px;
+    width: 100px;
+}
+
+.text {
+    color: #999999;
+}
+
+.uitext {
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+/*a:-webkit-any-link {*/
+/*color: webkit link;*/
+/*cursor: pointer;*/
+/*text decoration: undrline;*/
+/*}*/
+
+.ratingStars.stars {
+    color: #aaa;
+    overflow: hidden;
+    width: 75px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.stars {
+    color: #aaa;
+    width: 75px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.books h1 {
+    color: #fff;
+}
+
+.books .title {
+    color: #fff;
+    display: inline-block;
+    margin: auto;
+}
+
+div.dropdown {
+    margin: auto;
+}
+
+.star {
+    color: orange;
+    display: inline-block;
+    width: 15px;
+}
+
+.rating {
+    display: inline-block;
+    margin: auto;
+}
+
+.score {
+    color:white;
+}
+
+
+
+div.halfstar{
+    width: 10px;
+    height: 20px;
+    border: 1px solid #000;
+    position: relative;
+    padding-left: 10px;
+}
+div.halfstar>span{
+    position: absolute;
+    top: -3px;
+    left: -6px;
+}
+
+/*div.halfstar :nth-child(2){*/
+/*color: orange;*/
+/*clip: rect(0 200px 40px 45px);*/
+/*}*/
+div.halfstar {
+    display: inline;
+}
+
+div.halfstar :nth-child(1){
+    color: orange;
+    clip: rect(7px 8px 26px 0px);
+}
+
+
+.rating-wrapper {
+    display: inline-block;
+}
+
+
+.star-right {
+    padding-right: 20px;
+}
+
+.navbar-brand {
+    display: none !important;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 30px;
+}
+
+
+.btn-outline-default {
+    color: white !important;
+    font-size: 30px !important;
+}
+
+.book {
+    padding-top: 40px;
+}
