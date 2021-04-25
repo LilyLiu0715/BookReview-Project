@@ -36,6 +36,10 @@
     font-family: 'Redressed', serif;
 }
 
+.size1{
+  height:300px;
+}
+
 .row{
     column-gap: 40px;}
 
@@ -55,7 +59,8 @@
         </h1>
         <p1 style = "color:white">See the winners chosen by community of readers</p1>
         <br>
-        <button type = "button" class = "btn-btn-white">Click</button>
+        <!-- <button type = "button" class = "btn-btn-white" href ="/categories">Click</button> -->
+        <a class = "btn" href="/categories" style = "color:white">Click</a>
     </header>
 
     <div class = "container">
@@ -65,26 +70,44 @@
                         <h3> Book review choice Award</h3>
                         <p>See the winners in the only major book awards decided by readers</p>
                         <button type="button" class="btn btn-warning"><a href="/categories">See the Winners</a></button>
-                    
+
                         <div class = "row book-review-section">
                             <div class = "col-lg" >
-                                <h6><a href="#" style = "color:#00635d" > Fiction</a></h6>
-                                <h6><a href="#" style = "color:#00635d"> Romance</a></h6>
-                                <h6><a href="#" style = "color:#00635d"> Science Fiction</a></h6>
-                                <h6><a href="#" style = "color:#00635d"> Mystery & Thriller</a></h6>
+                                <h6><a href="/categories/Fiction" style = "color:#00635d" > Fiction</a></h6>
+                                <h6><a href="/categories/Romance" style = "color:#00635d"> Romance</a></h6>
+                                <h6><a href="/categories/Biography" style = "color:#00635d"> Biography</a></h6>
+                                <h6><a href="/categories/Mystery" style = "color:#00635d"> Mystery </a></h6>
                             </div>
                             <div class = "col-lg">
-                                <h6><a href="#" style = "color:#00635d"> Nonfiction</a></h6>
-                                <h6><a href="#" style = "color:#00635d"> Humor</a></h6>
-                                <h6><a href="#" style = "color:#00635d"> Fantasy</a></h6>
-                                <h6><a href="#" style = "color:#00635d"> Young Adult Fiction</a></h6>
+                                <h6><a href="/categories/Nonfiction" style = "color:#00635d"> Nonfiction</a></h6>
+                                <h6><a href="/categories/Humor" style = "color:#00635d"> Humor</a></h6>
+                                <h6><a href="/categories/fantasy" style = "color:#00635d"> Fantasy</a></h6>
+                                <h6><a href="/categories/Art" style = "color:#00635d"> Art </a></h6>
                             </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
                 <div class = "col-sm-3 ml-auto register-section">
                         <h5>Want to share your favorite book? Register now!</h5>
-                        <label for = "name" class="form-label">Name</label>
+                        <form action="/register" method="post">
+		                    <div class="form-group">
+		                  	<label for="username">User Name</label>
+			                  <input class="form-control" type="text" id="username" name="username" required />
+		                    </div>
+		                    <div class="form-group">
+			                  <label for="password">Password</label>
+			                  <input class="form-control" type="password" id="password" name="password" required />
+		                    </div>
+		                    <div class="form-group">
+		                    <label for="email">Email</label>
+			                  <input class="form-control" type="email" id="email" name="email" required />
+		                      </div>
+	                    	<div class="form-group">
+		                    	<button class="btn btn-md btn-warning btn-block">Sign Up!</button>
+		                    </div>
+		                    <hr>
+                        	</form>
+                        <!-- <label for = "name" class="form-label">Name</label>
                         <input type = "text" class = "form-control" id="name" placeholder="Name">
 
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -93,11 +116,11 @@
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control" id="password" placeholder="Password">
                         <br>
-                        <button type = "button" class = "btn btn-warning">Sign up</button>
+                        <button type = "button" class = "btn btn-warning">Sign up</button> -->
                </div>
             </div>
     </div>
-    <div class = "container the-community">
+    <!-- <div class = "container the-community">
         <div class = "row">
             <i class="fa fa-star fa-lg"></i><h2>New book added by the community</h2>  <i class="fa fa-star fa-lg"></i>
         </div>
@@ -107,7 +130,8 @@
                 <div class="card-body">
                   <h5 class="card-title">In Five Years</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="/bookDetail" class="btn btn-primary">View</a>
+                  <a href="/bookDetail/60820c22f31242e6b7780d4a" class="btn btn-primary">View</a>
+
                 </div>
               </div>
               <div class="card " style="width: 18rem;">
@@ -143,7 +167,8 @@
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="/bookDetail" class="btn btn-primary">View</a>
                 </div>
-              </div> 
+              </div>
+              <div class="card " style="width: 18rem;">
               <div class="card " style="width: 18rem;">
                 <img src="https://m.media-amazon.com/images/I/51I5n5j0xiL._SY346_.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -151,10 +176,33 @@
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   <a href="/bookDetail" class="btn btn-primary">View</a>
                 </div>
-              </div>       
+              </div>
         </div>
-    </div>
-</div>
+    </div> -->
+    
+
+    <div class="row ">
+		    <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+		        <%  books.forEach(function(book){ %>
+			          <div class="col-md-3 col-sm-6">
+				            <div class="thumbnail">
+				 	            <img src= "<%= book.image%>" class = size1>
+				
+					                  <div class="caption"> 
+					                      <h4>
+		   				                    <%= book.name %>
+	   				                    </h4>
+					
+				                    </div>
+	                          <p>
+		                        <a href="/bookDetail/<%= book._id %>" class="btn btn-primary">More Info</a>
+	                          </p>
+		                  </div>
+	                </div>
+	            <% }); %> 
+		      </div>
+	    </div>
+  </div>
 
 
 <%- include ('partial/footer') -%>

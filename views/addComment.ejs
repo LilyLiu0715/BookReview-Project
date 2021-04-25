@@ -18,7 +18,7 @@
             background-color:#eab676;
         }
 
-        .comment-container{
+        .wbdv-comment-head{
             font-family: 'Redressed', serif;
         }
 
@@ -29,37 +29,67 @@
 
 
 <body>
-    <div class="container comment-container">
+<div class="container comment-container">
 
-        <nav class="navbar sticky-top navbar-light mb-3 mt-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Add comment for In Five Years</a>
-                <a class="navbar-brand float-right" href="/">Back</a>
-            </div>
-        </nav>
-
-
-
-        <form class="row g-3">
-            <div class="col-12 mb-3 mt-3">
-                <label for="exampleFormControlTextarea1" class="form-label"><h5>Comment:</h5></label>
-                <textarea class="form-control" id="comment-textarea" placeholder="Leave a comment here!" rows="3"></textarea>
-            </div>
-
-            <div class="col-12 mb-3 mt-3">
-                <button type="submit" class="btn btn-primary submit-button">Submit</button>
-            </div>
-        </form>
+    <nav class="navbar sticky-top navbar-light mb-3 mt-3 wbdv-comment-head">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Add a comment for <%=book.name%></a>
+            <a class="navbar-brand float-right" href="/bookDetail/<%=book._id%>">Back</a>
+        </div>
+    </nav>
 
 
+    <form method="POST"
+          class="pure-form pure-form-aligned"
+          action="/bookDetail/<%=book._id%>/comments">
 
-        <h4>Temporary here:</h4>
-        <div>
-            <h1> Comments List</h1>
-
+        <div class="col-12 mb-3 mt-3">
+            <label for="exampleFormControlTextarea1" class="form-label"><h5 class="wbdv-comment-head">Comment:</h5></label>
+            <textarea
+                    class="form-control"
+                    id="comment-text"
+                    name="comment-text-field"
+                    placeholder="Leave a comment here!"
+                    rows="3">
+                </textarea>
         </div>
 
-    </div>
+        <div class="col-12 mb-3 mt-3">
+            <input type="submit" value="Submit" float-right>
+            <!--                <button type="submit" class="btn btn-primary submit-button">Submit</button>-->
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--        // Temporary Comments List-->
+    <!--        <ul class="list-group">-->
+
+    <!--            <li class="list-group-item">-->
+    <!--&lt;!&ndash;                <strong>Tom:</strong>&ndash;&gt;-->
+    <!--&lt;!&ndash;                11111&ndash;&gt;-->
+    <!--                <div class="d-flex w-100 justify-content-between">-->
+    <!--                    <h6 class="mb-1">Tom:</h6>-->
+    <!--                    <small>3 days ago</small>-->
+    <!--                </div>-->
+    <!--                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>-->
+    <!--            </li>-->
+
+
+
+    <!--        </ul>-->
+
+</div>
 
 
 

@@ -4,6 +4,7 @@ const mongoose = require("mongoose")
 
 const commentSchema = mongoose.Schema({
     text: { type: String, required: true },
+    time: {type: String, default: new Date().toISOString().slice(0, 10)},
     commenter: {
                 id:{
                     type: mongoose.Schema.Types.ObjectId,
